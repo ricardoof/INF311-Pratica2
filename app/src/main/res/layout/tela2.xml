@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tela2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela2">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/titulo"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="50dp" >
+
+        <TextView
+            android:id="@+id/nomeTela2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/nome"
+            android:textSize="20dp"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/idadeTela2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/idade"
+            android:textSize="20dp"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/pesoTela2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/peso"
+            android:textSize="20dp"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/alturaTela2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/altura"
+            android:textSize="20dp"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/imcTela2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/imc"
+            android:textSize="20dp"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/classificacaoTela2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/classificacao"
+            android:textSize="20dp"
+            android:layout_marginVertical="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/voltarTela1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/voltarTela1"
+        android:layout_below="@id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="voltarTela1"/>
+
+</RelativeLayout>

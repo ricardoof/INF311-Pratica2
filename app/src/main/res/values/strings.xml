@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">pratica 2</string>
+    <string name="titulo">Relatório nutricional</string>
+    <string name="nome">Nome:</string>
+    <string name="idade">Idade:</string>
+    <string name="peso">Peso (Kg):</string>
+    <string name="altura">Altura (m):</string>
+    <string name="imc">IMC:</string>
+    <string name="classificacao">Classificação:</string>
+    <string name="voltarTela1">Realizar novo cálculo</string>
+</resources>
