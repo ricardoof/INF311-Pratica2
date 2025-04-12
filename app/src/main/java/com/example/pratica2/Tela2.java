@@ -3,6 +3,7 @@ package com.example.pratica2;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -55,12 +56,19 @@ public class Tela2 extends Activity {
     @Override
     protected void onPause() {
         super.onPause();
+        Log.i("Ciclo de vida", "Tela 2 .onPause() chamado");
+    }
 
+    @Override
+    protected void onStop(){
+        super.onStop();
+        Log.i("Ciclo de vida", "Tela 2 .onStop() chamado");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        Log.i("Ciclo de vida", "Tela 2 .onDestroy() chamado");
     }
 
     public void voltarTela1(View v) {

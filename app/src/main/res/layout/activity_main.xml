@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--    LinearLayout do nome-->
+    <!--LinearLayout do nome-->
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
@@ -20,7 +20,8 @@
             android:id="@+id/nome"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/nome"/>
+            android:text="@string/nome"
+            android:typeface="normal"/>
 
         <EditText
             android:id="@+id/editNome"
@@ -49,15 +50,15 @@
 
             <TextView
                 android:id="@+id/idade"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/idade" />
+                android:text="@string/idade"
+                android:typeface="normal"/>
 
             <EditText
                 android:id="@+id/editIdade"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:text=""
                 android:inputType="text" />
         </LinearLayout>
 
@@ -72,7 +73,8 @@
                 android:id="@+id/peso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/peso" />
+                android:text="@string/peso"
+                android:typeface="normal"/>
 
             <EditText
                 android:id="@+id/editPeso"
@@ -93,7 +95,8 @@
                 android:id="@+id/altura"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/altura" />
+                android:text="@string/altura"
+                android:typeface="normal"/>
 
             <EditText
                 android:id="@+id/editAltura"
@@ -110,6 +113,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:text="@string/titulo"
+        android:typeface="normal"
         android:layout_below="@id/linearLayout2"
         android:onClick="relatorioNutricional"/>
 
