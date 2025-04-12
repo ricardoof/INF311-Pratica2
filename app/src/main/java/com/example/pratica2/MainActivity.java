@@ -21,9 +21,8 @@ public class MainActivity extends Activity {
         EditText editIdade = (EditText) findViewById(R.id.editIdade);
         EditText editPeso = (EditText) findViewById(R.id.editPeso);
         EditText editAltura = (EditText) findViewById(R.id.editAltura);
-        Button botao = (Button) findViewById(R.id.botao);
 
-        double imc = Double.parseDouble(editPeso.getText().toString()) / (Double.parseDouble(editAltura.getText().toString()) * Double.parseDouble(editAltura.getText().toString()));
+        double imc = Double.parseDouble(editPeso.getText().toString()) / Math.pow(Double.parseDouble(editAltura.getText().toString()), 2);
 
         Intent it = new Intent(getBaseContext(), Tela2.class);
         Bundle params = new Bundle();
