@@ -33,13 +33,13 @@ public class Tela2 extends Activity {
 
         if(IMC < 18.5){
             resultado = "Abaixo do peso";
-        } else if (IMC > 18.5 && IMC <= 24.9) {
+        } else if (IMC >= 18.5 && IMC <= 24.9) {
             resultado = "Saudável";
-        } else if(IMC >= 25 && IMC < 29.9 ){
+        } else if(IMC >= 25 && IMC <= 29.9 ){
             resultado = "Sobrepeso";
-        } else if(IMC >= 30.0 && IMC < 34.9){
+        } else if(IMC >= 30.0 && IMC <= 34.9){
             resultado = "Obesidade Grau I";
-        } else if(IMC >= 35 && IMC < 39.9) {
+        } else if(IMC >= 35 && IMC <= 39.9) {
             resultado = "Obesidade Grau II (severa)";
         } else if(IMC >= 40){
             resultado = "Obesidade Grau III (mórbida)";
